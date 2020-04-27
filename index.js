@@ -35,3 +35,5 @@ fs.readdir(path.join(__dirname, "commands"), (err, files) => {
 bot.on("error", (e) => console.error(e));
 bot.on("warn", (e) => console.warn(e));
 bot.on("debug", (e) => console.info(e));
+
+bot.login(config.token);
